@@ -15,13 +15,11 @@ var favouriteController = require('../controllers/favourite_controller');
 router.get('/', function(req, res, next) {
   res.render('index');
 });
-<<<<<<< HEAD
 router.get('/author', function(req, res, next) {
 res.render('author');
 });
-router.get('/question', quizController.question);
-router.get('/check',    quizController.check);
-=======
+
+
 
 
 // Autoload de parametros
@@ -96,6 +94,6 @@ router.delete('/users/:userId([0-9]+)/favourites/:quizId(\\d+)', sessionControll
                                                                  sessionController.adminOrMyselfRequired,
                                                                  favouriteController.del);
 
->>>>>>> master
+
 
 module.exports = router;
